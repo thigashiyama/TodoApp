@@ -1,0 +1,97 @@
+####################################################
+# .NET / ASP.NET Core / Entity Framework
+####################################################
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+*.cache
+*.log
+*.dbmdl
+*.bak
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Entity Framework
+*.mdf
+*.ldf
+*.sqlite
+*.db
+
+# EF migration snapshot (optional)
+#**/Migrations/*Snapshot.cs
+
+####################################################
+# IDE / Editor
+####################################################
+.vs/
+.vscode/
+.idea/
+*.vc.db
+
+####################################################
+# Configuration
+####################################################
+appsettings.Development.json
+appsettings.Local.json
+secrets.json
+*.secret.json
+
+####################################################
+# Node.js / TypeScript
+####################################################
+node_modules/
+dist/
+build/
+lib/
+temp/
+*.tsbuildinfo
+*.tgz
+*.lock
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+####################################################
+# TypeScript output inside wwwroot (compiled js)
+####################################################
+# Adjust this path to your structure
+wwwroot/js/
+wwwroot/ts-built/
+wwwroot/**/*.js
+wwwroot/**/*.js.map
+wwwroot/**/*.tsbuildinfo
+
+####################################################
+# Logs / Temp / System
+####################################################
+*.log
+*.tmp
+*.temp
+*.bak
+*.orig
+*.cache
+*.swp
+*~
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+####################################################
+# Publish / Deployment
+####################################################
+.publish/
+.publishsettings
+*.Publish.xml
+*.pubxml
+*.zip
+*.tar.gz
