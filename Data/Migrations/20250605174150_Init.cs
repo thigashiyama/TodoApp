@@ -6,11 +6,19 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace TodoApp.Data.Migrations
 {
     /// <inheritdoc />
-    public partial class AddTodoItem : Migration
+    public partial class Init : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.AddColumn<string>(
+                name: "Discriminator",
+                table: "AspNetUsers",
+                type: "nvarchar(21)",
+                maxLength: 21,
+                nullable: false,
+                defaultValue: "");
+
             migrationBuilder.CreateTable(
                 name: "TodoItems",
                 columns: table => new
@@ -44,6 +52,10 @@ namespace TodoApp.Data.Migrations
         {
             migrationBuilder.DropTable(
                 name: "TodoItems");
+
+            migrationBuilder.DropColumn(
+                name: "Discriminator",
+                table: "AspNetUsers");
         }
     }
 }
